@@ -1,0 +1,36 @@
+{
+	"name": "ds_snowFlake_Core",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_snowFlake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [
+			{
+				"name": "CID",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "CNAME",
+				"type": "VARCHAR",
+				"precision": 30,
+				"scale": 0
+			},
+			{
+				"name": "CLOCATIONS",
+				"type": "VARCHAR",
+				"precision": 30,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "PUBLIC",
+			"table": "ASM_C"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
